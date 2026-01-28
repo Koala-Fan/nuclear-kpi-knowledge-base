@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beancount Skill Configuration",
+  "description": "Configuration options for the Beancount accounting skill",
+  "properties": {
+    "beancount_file": {
+      "type": "string",
+      "description": "Path to the main Beancount file",
+      "default": "main.bean"
+    },
+    "beancount_directory": {
+      "type": "string",
+      "description": "Directory containing the Beancount files",
+      "default": "."
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "Whether the Beancount skill is enabled",
+      "default": true
+    }
+  },
+  "required": ["beancount_file", "beancount_directory"],
+  "additionalProperties": false
+}

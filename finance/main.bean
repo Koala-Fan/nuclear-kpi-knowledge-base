@@ -1,0 +1,40 @@
+option "title" "Personal Financial Records"
+option "operating_currency" "USD"
+option "operating_currency" "CNY"
+option "inferred_tolerance_default" "USD:0.01"
+option "inferred_tolerance_default" "CNY:0.01"
+
+; Accounts
+2020-01-01 open Assets:Checking
+2020-01-01 open Assets:Savings
+2020-01-01 open Assets:Alipay
+2020-01-01 open Expenses:Food
+2020-01-01 open Expenses:Food:Coffee
+2020-01-01 open Expenses:Food:Takeout
+2020-01-01 open Expenses:Shopping
+2020-01-01 open Expenses:Transportation
+2020-01-01 open Expenses:Entertainment
+2020-01-01 open Income:Salary
+2020-01-01 open Equity:Opening-Balances
+
+; Initial balances
+2020-01-01 * "Opening Balance"
+  Assets:Checking              1000.00 USD
+  Assets:Savings               5000.00 USD
+  Equity:Opening-Balances
+
+2026-01-28 * "超市购物" "日常食品杂货"
+  Assets:Checking  -85.50 USD
+  Expenses:Food
+2026-01-26 * "外卖平台" "晚餐"
+  Expenses:Food:Takeout  68.50 CNY
+  Assets:Alipay  -68.50 CNY
+
+2026-01-27 * "工资" "1月工资"
+  Assets:Alipay  15000.00 CNY
+  Income:Salary  -15000.00 CNY
+
+2026-01-28 * "超市" "日用品"
+  Expenses:Shopping  125.80 CNY
+  Assets:Alipay  -125.80 CNY
+

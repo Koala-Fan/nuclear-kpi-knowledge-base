@@ -1,0 +1,18 @@
+; Generated from Alipay bill
+
+2026-01-25 * "星巴克" "咖啡"
+  Expenses:Food:Coffee  35.00 CNY
+  Assets:Alipay  -35.00 CNY
+
+2026-01-26 * "外卖平台" "晚餐"
+  Expenses:Food:Takeout  68.50 CNY
+  Assets:Alipay  -68.50 CNY
+
+2026-01-27 * "工资" "1月工资"
+  Assets:Alipay  15000.00 CNY
+  Income:Salary  -15000.00 CNY
+
+2026-01-28 * "超市" "日用品"
+  Expenses:Shopping  125.80 CNY
+  Assets:Alipay  -125.80 CNY
+
